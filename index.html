@@ -42,7 +42,8 @@
 
   header { position: sticky; top: 0; z-index: 50; background: var(--bg); border-bottom: 1px solid var(--border); }
   .header-inner { display: flex; align-items: center; justify-content: space-between; padding: 12px 24px; max-width: 1140px; margin: 0 auto; gap: 20px; }
-  .brand { display: flex; flex-direction: column; gap: 2px; }
+  .brand { display: flex; flex-direction: column; align-items: center; gap: 2px; }
+  .brand-location { text-align: center; }
   .brand-location { font-size: 11px; color: var(--text-dim); letter-spacing: 0.06em; text-transform: uppercase; }
   .logo-img { height: 40px; width: auto; flex-shrink: 0; }
   .nav-cta { background: var(--orange); color: #14100c; font-weight: 600; font-size: 14px; padding: 10px 18px; border-radius: 3px; border: none; cursor: pointer; white-space: nowrap; transition: transform .2s ease, box-shadow .2s ease; }
@@ -353,19 +354,89 @@
       </div>
       <div class="services-grid">
         <div class="service-card reveal">
-          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.5"/><path d="M12 4v2M12 18v2M4 12h2M18 12h2M6.3 6.3l1.4 1.4M16.3 16.3l1.4 1.4M17.7 6.3l-1.4 1.4M7.7 16.3l-1.4 1.4"/></svg>
-          <h3>Oil &amp; Fluid Service</h3>
-          <p>Conventional, synthetic blend, or full synthetic, plus brake, coolant, and transmission fluid checks.</p>
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 3h6l1 4h3v3l-2 1v6a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-6l-2-1V7h3l1-4z"/><path d="M9 13h6"/></svg>
+          <h3>Engine Repair &amp; Diagnostics</h3>
+          <p>Check engine light diagnosis, misfires, oil leaks, timing issues, sensor problems, and fuel or air delivery issues, along with head gasket diagnostics, engine repair, and complete engine replacement.</p>
+        </div>
+        <div class="service-card reveal">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+          <h3>Transmission &amp; Drivetrain Repair</h3>
+          <p>Transmission diagnostics, complete transmission replacement, CVT service, transmission fluid and filter service, axles, and other drivetrain-related repairs.</p>
         </div>
         <div class="service-card reveal">
           <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="8" width="16" height="9" rx="1.5"/><path d="M8 8V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M9 12.5h6"/></svg>
-          <h3>Brakes</h3>
-          <p>Pads, rotors, calipers, and fluid flushes. We measure before we recommend.</p>
+          <h3>Brake Repair &amp; Service</h3>
+          <p>Brake pads, rotors, calipers, brake hoses, master cylinders, electronic parking brakes, brake fluid flushes, and full brake diagnostics.</p>
         </div>
         <div class="service-card reveal">
-          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 3h6l1 4h3v3l-2 1v6a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-6l-2-1V7h3l1-4z"/><path d="M9 13h6"/></svg>
-          <h3>Suspension &amp; Steering</h3>
-          <p>Control arms, tie rods, and struts: the parts you can't see, aligned and repaired right.</p>
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v6M4.2 16.8l5.2-3M19.8 16.8l-5.2-3"/></svg>
+          <h3>Steering &amp; Suspension</h3>
+          <p>Control arms, ball joints, wheel bearings, shocks, struts, rack-and-pinion and steering repairs, and full suspension diagnostics.</p>
+        </div>
+        <div class="service-card reveal">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v20M4 7l16 10M20 7L4 17"/></svg>
+          <h3>A/C &amp; Heating</h3>
+          <p>A/C diagnostics, compressors, refrigerant service, A/C lines, heater hoses, HVAC actuators, and heating and cooling repairs.</p>
+        </div>
+        <div class="service-card reveal">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg>
+          <h3>Electrical &amp; Computer Diagnostics</h3>
+          <p>Check engine and warning light diagnosis, batteries, alternators, starting and charging systems, parasitic draws, wiring, cameras, sensors, and advanced scan tool diagnostics.</p>
+        </div>
+        <div class="service-card reveal">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3c4 5 6 8 6 11a6 6 0 1 1-12 0c0-3 2-6 6-11z"/></svg>
+          <h3>Cooling System</h3>
+          <p>Coolant flushes, water pumps, thermostats, coolant leaks, hoses, radiators, and overheating diagnostics.</p>
+        </div>
+        <div class="service-card reveal">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 21V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v16M4 21h10M7 6h4"/><path d="M17 8h1a2 2 0 0 1 2 2v6a1.5 1.5 0 0 1-3 0v-3h-1"/></svg>
+          <h3>Fuel &amp; Emissions Systems</h3>
+          <p>Fuel pumps, fuel injectors, EVAP leaks, purge and vent valves, fuel pressure problems, oxygen sensors, and emissions diagnostics.</p>
+        </div>
+        <div class="service-card reveal">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18M6 6l12 12M18 6L6 18"/></svg>
+          <h3>Tires &amp; Wheels</h3>
+          <p>Tire installation, mounting and balancing, rotations, flat repair, wheel service, TPMS diagnosis, sensor replacement, programming, and relearns.</p>
+        </div>
+        <div class="service-card reveal">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.5"/><path d="M12 4v2M12 18v2M4 12h2M18 12h2M6.3 6.3l1.4 1.4M16.3 16.3l1.4 1.4M17.7 6.3l-1.4 1.4M7.7 16.3l-1.4 1.4"/></svg>
+          <h3>Preventive Maintenance</h3>
+          <p>Oil changes, filters, spark plugs, fluid services, tune-ups, and maintenance scheduled around your mileage.</p>
+        </div>
+        <div class="service-card reveal">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="1" y="9" width="13" height="8" rx="1"/><path d="M14 12h4l3 3v2h-7"/><circle cx="6" cy="19" r="1.6"/><circle cx="17" cy="19" r="1.6"/></svg>
+          <h3>Diesel &amp; Truck Repair</h3>
+          <p>Maintenance, diagnostics, and repairs for diesel engines and heavy-duty pickup trucks.</p>
+        </div>
+        <div class="service-card reveal">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+          <h3>European Vehicle Service</h3>
+          <p>Service and repair for BMW, Mercedes-Benz, Audi, Volkswagen, and other European vehicles.</p>
+        </div>
+        <div class="service-card reveal">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 13l2-5a2 2 0 0 1 2-1h10a2 2 0 0 1 2 1l2 5"/><rect x="2" y="13" width="20" height="6" rx="1.5"/><circle cx="7" cy="19" r="1.4"/><circle cx="17" cy="19" r="1.4"/></svg>
+          <h3>Domestic &amp; Asian Vehicle Service</h3>
+          <p>Service and repair for Ford, Chevrolet, GM, Chrysler, Dodge, Ram, Toyota, Honda, Nissan, Hyundai, Kia, and more.</p>
+        </div>
+        <div class="service-card reveal">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M9 3V2h6v1M8 10l2 2 4-4M8 16h8"/></svg>
+          <h3>Vehicle Inspections &amp; Diagnostics</h3>
+          <p>General inspections, diagnostic evaluations, pre-purchase inspections, and troubleshooting for any concern.</p>
+        </div>
+        <div class="service-card reveal">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l7 3v6c0 5-3 8-7 11-4-3-7-6-7-11V5l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+          <h3>Warranty &amp; Extended-Warranty Repairs</h3>
+          <p>Diagnosis and repair covered under third-party vehicle service contracts and extended warranties.</p>
+        </div>
+        <div class="service-card reveal">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="10" width="8" height="6" rx="1"/><rect x="11" y="8" width="8" height="8" rx="1"/><circle cx="5" cy="18" r="1.3"/><circle cx="15" cy="18" r="1.3"/></svg>
+          <h3>Fleet &amp; Commercial Vehicle Service</h3>
+          <p>Maintenance, diagnostics, and repairs for business, fleet, and commercial vehicles.</p>
+        </div>
+        <div class="service-card reveal">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l1.5 4.5L18 9l-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5L12 3z"/><path d="M19 15l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7.7-2z"/></svg>
+          <h3>Vehicle Detailing</h3>
+          <p>Interior and exterior detailing to keep your vehicle looking its best.</p>
         </div>
       </div>
     </div>
@@ -468,62 +539,93 @@
     <div class="wrap">
       <div class="section-head reveal">
         <h2>Full-Service Repair &amp; Maintenance</h2>
-        <p>Every job comes with a written estimate before we start.</p>
+        <p>Every job comes with a written estimate before we start. Call for pricing on anything below.</p>
       </div>
       <div class="services-grid">
         <div class="service-card reveal">
-          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.5"/><path d="M12 4v2M12 18v2M4 12h2M18 12h2M6.3 6.3l1.4 1.4M16.3 16.3l1.4 1.4M17.7 6.3l-1.4 1.4M7.7 16.3l-1.4 1.4"/></svg>
-          <h3>Oil &amp; Fluid Service</h3>
-          <p>Conventional, blend, or full synthetic, plus brake, coolant, power steering, and transmission fluid checks.</p>
-          <span class="price">Call for pricing</span>
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 3h6l1 4h3v3l-2 1v6a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-6l-2-1V7h3l1-4z"/><path d="M9 13h6"/></svg>
+          <h3>Engine Repair &amp; Diagnostics</h3>
+          <p>Check engine light diagnosis, misfires, oil leaks, timing issues, sensor problems, and fuel or air delivery issues, along with head gasket diagnostics, engine repair, and complete engine replacement.</p>
+        </div>
+        <div class="service-card reveal">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+          <h3>Transmission &amp; Drivetrain Repair</h3>
+          <p>Transmission diagnostics, complete transmission replacement, CVT service, transmission fluid and filter service, axles, and other drivetrain-related repairs.</p>
         </div>
         <div class="service-card reveal">
           <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="8" width="16" height="9" rx="1.5"/><path d="M8 8V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M9 12.5h6"/></svg>
-          <h3>Brakes</h3>
-          <p>Pads, rotors, calipers, and fluid flushes. We measure before we recommend, so there's no upselling on parts that are still good.</p>
-          <span class="price">Call for a free inspection</span>
+          <h3>Brake Repair &amp; Service</h3>
+          <p>Brake pads, rotors, calipers, brake hoses, master cylinders, electronic parking brakes, brake fluid flushes, and full brake diagnostics.</p>
         </div>
         <div class="service-card reveal">
-          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 3h6l1 4h3v3l-2 1v6a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-6l-2-1V7h3l1-4z"/><path d="M9 13h6"/></svg>
-          <h3>Check Engine &amp; Diagnostics</h3>
-          <p>Full OBD-II scan and road test to find the actual cause, explained in plain language.</p>
-          <span class="price">Call for pricing</span>
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v6M4.2 16.8l5.2-3M19.8 16.8l-5.2-3"/></svg>
+          <h3>Steering &amp; Suspension</h3>
+          <p>Control arms, ball joints, wheel bearings, shocks, struts, rack-and-pinion and steering repairs, and full suspension diagnostics.</p>
+        </div>
+        <div class="service-card reveal">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v20M4 7l16 10M20 7L4 17"/></svg>
+          <h3>A/C &amp; Heating</h3>
+          <p>A/C diagnostics, compressors, refrigerant service, A/C lines, heater hoses, HVAC actuators, and heating and cooling repairs.</p>
+        </div>
+        <div class="service-card reveal">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg>
+          <h3>Electrical &amp; Computer Diagnostics</h3>
+          <p>Check engine and warning light diagnosis, batteries, alternators, starting and charging systems, parasitic draws, wiring, cameras, sensors, and advanced scan tool diagnostics.</p>
+        </div>
+        <div class="service-card reveal">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3c4 5 6 8 6 11a6 6 0 1 1-12 0c0-3 2-6 6-11z"/></svg>
+          <h3>Cooling System</h3>
+          <p>Coolant flushes, water pumps, thermostats, coolant leaks, hoses, radiators, and overheating diagnostics.</p>
+        </div>
+        <div class="service-card reveal">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 21V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v16M4 21h10M7 6h4"/><path d="M17 8h1a2 2 0 0 1 2 2v6a1.5 1.5 0 0 1-3 0v-3h-1"/></svg>
+          <h3>Fuel &amp; Emissions Systems</h3>
+          <p>Fuel pumps, fuel injectors, EVAP leaks, purge and vent valves, fuel pressure problems, oxygen sensors, and emissions diagnostics.</p>
         </div>
         <div class="service-card reveal">
           <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18M6 6l12 12M18 6L6 18"/></svg>
-          <h3>Tires &amp; Alignment</h3>
-          <p>Rotation, balancing, new tire sales, and four-wheel alignment to keep wear even and steering true.</p>
-          <span class="price">Call for pricing</span>
+          <h3>Tires &amp; Wheels</h3>
+          <p>Tire installation, mounting and balancing, rotations, flat repair, wheel service, TPMS diagnosis, sensor replacement, programming, and relearns.</p>
         </div>
         <div class="service-card reveal">
-          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M7 7V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2M3 13h18"/></svg>
-          <h3>Engine &amp; Transmission</h3>
-          <p>From timing belts to full rebuilds. Major work comes with a written estimate and a straight timeline.</p>
-          <span class="price">Estimate always free</span>
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.5"/><path d="M12 4v2M12 18v2M4 12h2M18 12h2M6.3 6.3l1.4 1.4M16.3 16.3l1.4 1.4M17.7 6.3l-1.4 1.4M7.7 16.3l-1.4 1.4"/></svg>
+          <h3>Preventive Maintenance</h3>
+          <p>Oil changes, filters, spark plugs, fluid services, tune-ups, and maintenance scheduled around your mileage.</p>
         </div>
         <div class="service-card reveal">
-          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12a8 8 0 1 1 8 8"/><path d="M4 12l3-3M4 12l3 3"/><path d="M12 8v4l3 2"/></svg>
-          <h3>Suspension &amp; Steering</h3>
-          <p>Control arms, tie rods, struts, and shocks: worn suspension parts fixed before they wear your tires.</p>
-          <span class="price">Call for pricing</span>
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="1" y="9" width="13" height="8" rx="1"/><path d="M14 12h4l3 3v2h-7"/><circle cx="6" cy="19" r="1.6"/><circle cx="17" cy="19" r="1.6"/></svg>
+          <h3>Diesel &amp; Truck Repair</h3>
+          <p>Maintenance, diagnostics, and repairs for diesel engines and heavy-duty pickup trucks.</p>
         </div>
         <div class="service-card reveal">
-          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12a8 8 0 1 1 8 8"/><path d="M4 12l3-3M4 12l3 3"/><path d="M12 8v4l3 2"/></svg>
-          <h3>AC &amp; Heating</h3>
-          <p>Recharge, leak detection, and compressor repair so the cabin's comfortable no matter the season.</p>
-          <span class="price">Call for pricing</span>
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+          <h3>European Vehicle Service</h3>
+          <p>Service and repair for BMW, Mercedes-Benz, Audi, Volkswagen, and other European vehicles.</p>
         </div>
         <div class="service-card reveal">
-          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1 3-6z"/></svg>
-          <h3>Fleet &amp; Commercial</h3>
-          <p>Scheduled maintenance and repair for delivery vans, box trucks, and work fleets with minimal downtime.</p>
-          <span class="price">Fleet rates available, call</span>
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 13l2-5a2 2 0 0 1 2-1h10a2 2 0 0 1 2 1l2 5"/><rect x="2" y="13" width="20" height="6" rx="1.5"/><circle cx="7" cy="19" r="1.4"/><circle cx="17" cy="19" r="1.4"/></svg>
+          <h3>Domestic &amp; Asian Vehicle Service</h3>
+          <p>Service and repair for Ford, Chevrolet, GM, Chrysler, Dodge, Ram, Toyota, Honda, Nissan, Hyundai, Kia, and more.</p>
         </div>
         <div class="service-card reveal">
-          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12h3l2-6 4 12 2-6h7"/></svg>
-          <h3>Pre-Purchase Inspection</h3>
-          <p>Buying a used car? We'll put it on the lift and tell you exactly what you're getting into.</p>
-          <span class="price">Call for pricing</span>
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M9 3V2h6v1M8 10l2 2 4-4M8 16h8"/></svg>
+          <h3>Vehicle Inspections &amp; Diagnostics</h3>
+          <p>General inspections, diagnostic evaluations, pre-purchase inspections, and troubleshooting for any concern.</p>
+        </div>
+        <div class="service-card reveal">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l7 3v6c0 5-3 8-7 11-4-3-7-6-7-11V5l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+          <h3>Warranty &amp; Extended-Warranty Repairs</h3>
+          <p>Diagnosis and repair covered under third-party vehicle service contracts and extended warranties.</p>
+        </div>
+        <div class="service-card reveal">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="10" width="8" height="6" rx="1"/><rect x="11" y="8" width="8" height="8" rx="1"/><circle cx="5" cy="18" r="1.3"/><circle cx="15" cy="18" r="1.3"/></svg>
+          <h3>Fleet &amp; Commercial Vehicle Service</h3>
+          <p>Maintenance, diagnostics, and repairs for business, fleet, and commercial vehicles.</p>
+        </div>
+        <div class="service-card reveal">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l1.5 4.5L18 9l-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5L12 3z"/><path d="M19 15l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7.7-2z"/></svg>
+          <h3>Vehicle Detailing</h3>
+          <p>Interior and exterior detailing to keep your vehicle looking its best.</p>
         </div>
       </div>
     </div>
